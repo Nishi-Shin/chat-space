@@ -18,13 +18,13 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|name|string|null: false, add_index: true|
+|name|string|null: false, index: true|
 |email|string|null: false, uniqe: true|
 
 ### Association
 
 - has_many :group_users
-- has_many :group_through
+- has_many :groups, through: :group_users
 - has_many :messages
 
 ## groupsテーブル
@@ -36,7 +36,7 @@
 ### Association
 
 - has_many :group_users
-- has_many :group_through
+- has_many :users, through: :group_users
 - has_many  :messages
 
 ## group_usersテーブル
