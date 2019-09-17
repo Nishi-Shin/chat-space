@@ -1,25 +1,6 @@
 .contents
   .left-contents
-    .left-header-contents
-      .left-header-contents-user
-        .left-header-contents-user__name
-          test-user
-        .left-header-contents-user__menu
-          =link_to "https://www.google.com/search?q=google&rlz=1C5CHFA_enJP863JP865&oq=go&aqs=chrome.1.69i57j0l2j69i60l3.3273j1j4&sourceid=chrome&ie=UTF-8", class: "contents__btn" do
-            = fa_icon 'edit'
-          =link_to "https://www.google.com/search?q=google&rlz=1C5CHFA_enJP863JP865&oq=go&aqs=chrome.1.69i57j0l2j69i60l3.3273j1j4&sourceid=chrome&ie=UTF-8", class: "contents__btn" do
-            = fa_icon 'cog'
-    .left-main-contents
-      .left-main-contents-sample
-        .left-main-contents-sample__name
-          sample
-        .left-main-contents-sample__message
-          さようなら
-      .left-main-contents-group    
-        .left-main-contents-group__name
-          sample-group
-        .left-main-contents-group__message
-          hello!
+    = render 'shared/side_bar'
 
   .right-contents
     .right-header-contents
