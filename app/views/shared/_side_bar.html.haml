@@ -10,7 +10,7 @@
 .left-main-contents
   - current_user.groups.each do |group|
     .left-main-contents-sample
-      = link_to "" do
+      = link_to group_messages_path(group) do
         .left-main-contents-sample__name
           = group.name
         .left-main-contents-sample__message
