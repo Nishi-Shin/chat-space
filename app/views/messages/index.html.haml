@@ -10,27 +10,16 @@
         Members: test-user
     .right-header-contents-edit-btn
       Edit
+    
     .right-main-contents
-      .right-main-contents-upper
-        .right-main-contents-upper__name
-          test-user
-        .right-main-contents-upper__data
-          2017/05/18 13:19:51 UTC
-        .right-main-contents-upper__message
-          こんにちは！
-      .right-main-contents-second
-        .right-main-contents-second__name
-          test-user
-        .right-main-contents-second__data   
-          2017/05/18 13:21:51 UTC
-        .right-main-contents-second__message
-          さようなら！
+      = render @messages
+
     .right-form-contents
-      .right-form-contents__input-box
-        type a message
-        .formbox-image
-          %label.upload-label.formbox-image--icon
-            %i.fa.fa-picture-o
-            %input.image{type: "file"}
-      .right-form-contents__submit
-        Send
+      .form
+        = form_for [@group, @message] do |f|
+          .input-box
+            = f.text_field :content, class: 'input-box__message', placeholder: 'type a message'
+            = f.label :image, class: 'input-box__image' do
+              = fa_icon 'picture-o'
+              = f.file_field :image, class: 'hidden'
+          = f.submit 'Send', class: 'submit-btn'
