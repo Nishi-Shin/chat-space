@@ -118,6 +118,7 @@
   background-color: #fafafa;
   height: calc(100vh - 190px);
   padding: 0 40px;
+  overflow: scroll;
   .right-main-contents-upper {
     &__name{
       display:inline-block;
@@ -177,85 +178,3 @@
   color: white;
   cursor: pointer;
 }
-
-// .right-form-contents {
-  //   height: 90px;
-  //   background-color: #ddd;
-  //   padding: 20px 40px;
-  //   .right-form-contents-main {
-  //     display: flex;
-  //     height: 50px;
-  //     width: 100%;
- 
-   //     .right-form-contents-main-input {
-  //       position: relative;
-  //       // display: inline-block;
-  //       width: 100%;
-  //       .form__message {
-  //         height: 50px;
-  //         padding: 0 40px 0 10px;
-  //         color: #434a54;
-  //         border-style: none;
-  //       }
-  //       .right-form-contents-main-input__image {
-  //         font-size: 1.3rem;
-  //         position: absolute;
-          
-  //         cursor: pointer;
-  //         .hidden {
-  //           display: none;
-  //         }
-  //       }
-  //     }
-  //     .right-form-contents-main-submit {
-  //       // display: inline;
-  //       // position: absolute;
-  //       .form__submit {
-          
-  //       }
-  //     }
-  //   }
-  //  }
-
-
-
-
-
-
-
-// .right-form-contents {
-//   height: 90px;
-//   background-color: #ddd;
-//   padding: 20px 40px;
-//   .right-form-contents-main {
-//     width: 100%;
-//     height: 50px;
-//     display: inline-block;
-//     .right-form-contents-main-input {
-      
-//       .form__message {
-//         color: #434a54;
-//         border-style: none;
-//       }
-//       .right-form-contents-main-input__image {
-//         .hidden {
-//           font-size: 1.3rem;
-//           top: 10px;
-//           right: 10px;
-//           cursor: pointer;
-//           display: none;
-//         }
-//       }
-//     }
-//     .form__submit {
-//       height: 100%;
-//       padding: 0 30px;
-//       margin-left: 15px;
-//       background-color: #38aef0;
-//       color: white;
-//       cursor: pointer;
-//       display: inline;
-//     }
-//   }
-// }
-
