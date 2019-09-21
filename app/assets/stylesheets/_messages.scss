@@ -118,6 +118,7 @@
   background-color: #fafafa;
   height: calc(100vh - 190px);
   padding: 0 40px;
+  overflow: scroll;
   .right-main-contents-upper {
     &__name{
       display:inline-block;
