@@ -5,12 +5,14 @@
   .right-contents
     .right-header-contents
       .right-header-contents__name
-        text-group
+        = @group.name
       .right-header-contents__message
-        Members: test-user
+        Member :
+        - @group.users.each do |user|
+          = user.name
     .right-header-contents-edit-btn
-      Edit
-    
+      = link_to "Edit", edit_group_path(@group), class: 'edit-btn'
+
     .right-main-contents
       = render @messages
 
