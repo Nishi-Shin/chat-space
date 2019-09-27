@@ -38,6 +38,7 @@ $(function(){
     })
     .fail(function(){
       alert('error');
+      $('input').prop('disabled', false);
     })
   });
   var reloadMessages = function() {
